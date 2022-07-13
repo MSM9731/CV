@@ -1,0 +1,1 @@
+the config.php is habe to be placed on the root directory of project
