@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Suls';
+  src: url(./Suls.eot);
+  src: url(./Suls.eot?#iefix) format('embedded-opentype'),
+       url(./Suls.otf) format('otf'),
+       url(./Suls.svg#Suls) format('svg'),
+       url(./Suls.woff) format('woff'),
+       url(./Suls.woff2) format('woff2');
+}

@@ -1,0 +1,68 @@
+/* @font-face {
+  font-family: 'b-nazanin';
+  src: url(../fonts/B-NAZANIN.TTF);
+} */
+
+.ff-suls {
+  font-family: Suls !important;
+}
+
+.ff-vazir {
+  font-family: Vazir !important;
+}
+
+.header-bg img {
+  filter: grayscale(75%);
+}
+
+header h1 {
+  transition: all 500ms !important;
+}
+
+header h1:hover {
+  background-color: var(--bs-light) !important;
+  box-shadow: inset 0 0 0.8rem var(--bs-dark) !important;
+  color: var(--bs-dark) !important;
+}
+
+.card {
+  transition: all 200ms;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 .5rem #0005;
+}
+
+.progress {
+  animation-name: progress;
+  animation-duration: 500ms;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+#goUp button {
+  transition: all 150ms;
+  transform: scale(0);
+}
+#goUp button:hover {
+  opacity: 1 !important;
+}
+
+.bg-pink {
+  background-color: #fd17ff !important;
+}
+.bg-yellow {
+  background-color: #f1ff00 !important;
+}
+.bg-light-green {
+  background-color: #00ff02 !important;
+}
