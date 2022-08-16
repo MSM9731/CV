@@ -164,8 +164,14 @@ window.addEventListener('load', function() {
           title: 'فریلنسری',
           company: '',
           startDate: 'اردیبهشت ۱۴۰۰',
-          endDate: 'کنون',
+          endDate: 'تیر 1400',
           duty: ''
+        },{
+          title: 'برنامه نویس فرانت اند',
+          company: 'هوشمند پردازش فراز پارسه',
+          startDate: 'تیر 1400',
+          endDate: 'کنون',
+          duty: 'ایجاد و تغییر فرانت اند'
         }]
       },
       characterRecegnitionTests: {
@@ -230,7 +236,7 @@ window.addEventListener('load', function() {
 
 
 
-  console.log('all loaded');
+//   console.log('all loaded');
 });
 
 
