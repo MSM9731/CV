@@ -171,7 +171,7 @@ window.addEventListener('load', function() {
           company: 'هوشمند پردازش فراز پارسه',
           startDate: 'تیر 1400',
           endDate: 'کنون',
-          duty: 'ایجاد و تغییر فرانت اند'
+          duty: ''
         }]
       },
       characterRecegnitionTests: {
