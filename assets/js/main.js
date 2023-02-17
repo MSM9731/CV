@@ -60,10 +60,10 @@ window.addEventListener('load', function() {
           linkText: 'ایمیل',
           linkHref: 'mailto:salehmohammadi@chmail.ir'
         },{
-          title: 'واتساپ',
-          content: '09195600184',
+          title: 'ایتا',
+          content: '@MSM9731',
           linkText: 'پیام',
-          linkHref: 'https://wa.me/989195600184'
+          linkHref: 'https://eitaa.com/MSM9731'
         }]
       },
       skills: {
