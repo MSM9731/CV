@@ -110,6 +110,9 @@ window.addEventListener('load', function() {
           title: 'PostgreSQL',
           percent: 50
         },{
+          title: 'Server configuration',
+          percent: 50
+        },{
           title: 'UX',
           percent: 80
         },{
