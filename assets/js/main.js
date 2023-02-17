@@ -84,13 +84,13 @@ window.addEventListener('load', function() {
           percent: 95
         },{
           title: 'SASS',
-          percent: '80'
+          percent: 80
         },{
           title: 'SCSS',
-          percent: '80'
+          percent: 80
         },{
           title: 'LESS',
-          percent: '80'
+          percent: 80
         },{
           title: 'Ajax',
           percent: 95
@@ -102,9 +102,12 @@ window.addEventListener('load', function() {
           percent: 50
         },{
           title: 'PHP',
-          percent: 75
+          percent: 85
         },{
           title: 'Mysql',
+          percent: 50
+        },{
+          title: 'PostgreSQL',
           percent: 50
         },{
           title: 'UX',
