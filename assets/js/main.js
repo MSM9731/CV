@@ -170,13 +170,13 @@ window.addEventListener('load', function() {
           title: 'فریلنسری',
           company: '',
           startDate: 'اردیبهشت ۱۴۰۰',
-          endDate: 'تیر 1400',
+          endDate: 'تیر 1401',
           duty: ''
         },{
-          title: 'برنامه نویس فرانت اند',
-          company: 'هوشمند پردازش فراز پارسه',
-          startDate: 'تیر 1400',
-          endDate: 'کنون',
+          title: 'برنامه نویس فول استک',
+          company: 'پویش تصویر گیتی',
+          startDate: 'آبان 1401',
+          endDate: 'اکنون',
           duty: ''
         }]
       },
@@ -206,7 +206,7 @@ window.addEventListener('load', function() {
           title: 'لیسانس',
           university: 'دانشگاه صنعتی اصفهان',
           startDate: '۱۳۹۸',
-          endDate: 'کنون'
+          endDate: '1400(انصرافی)'
         }]
       }
     }
