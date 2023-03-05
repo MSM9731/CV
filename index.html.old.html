@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html dir="rtl" lang="fa">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +12,64 @@
     console.log(window.innerWidth)
   </script> -->
 
+  <link rel="preload" href="assets/lib/vue/dist/vue.min.js" as="script">
+  <link rel="preload" href="assets/lib/bootstrap/dist/css/bootstrap.rtl.min.css" as="style">
+  <link rel="preload" href="assets/fonts/suls/styles.css" as="style">
+  <link rel="preload" href="assets/fonts/vazir/styles.css" as="style">
+  <link rel="preload" href="assets/js/main.js" as="script">
+  <link rel="preload" href="assets/css/main.css" as="style">
+  <!-- <link rel="preload" href="favicon.ico"> -->
+
   <!-- bootstrap -->
-  <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.rtl.min.css" type="text/css" media="all" />
-  
+  <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.rtl.min.css" type="text/css" media="all">
   <!-- fonts -->
-  <link rel="stylesheet" href="assets/fonts/suls/styles.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/fonts/vazir/styles.css" type="text/css" media="all" />
-  
+  <link rel="stylesheet" href="assets/fonts/suls/styles.css" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/fonts/vazir/styles.css" type="text/css" media="all">
   <!-- customize styles -->
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <title>
     محمدصالح محمدی
   </title>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: gainsboro;
+    }
+
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="goUp" class="position-fixed bottom-0 start-0 p-3 p-md-5" style="z-index: 10;">
-    <button class="btn btn-dark opacity-50 p-2 p-md-4">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  <div id="goUp" class="position-fixed bottom-0 start-0 p-3 p-md-4" style="z-index: 10;">
+    <button class="btn btn-dark opacity-50 p-1 p-md-2 border border-light">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z">
       </svg>
     </button>
   </div>
-  
-  <header dir="rtl" class="position-relative vh-100 mb-3 mb-md-5">
+
+  <header class="position-relative min-vh-100 mb-3 mb-md-5">
     <div class="header-bg">
-      <img src="assets/img/header-1.jpg" alt="" class="w-100 vh-100 bg-info" loading="lazy">
+      <img src="assets/img/header-1.jpg" alt="" class="w-100 min-vh-100 bg-info" loading="lazy">
       <!-- <script type="text/javascript" charset="utf-8">
         alert(window.innerWidth)
       </script> -->
     </div>
-    <div class="position-absolute top-0 d-flex flex-column justify-content-center align-items-start align-items-sm-center w-100 h-100 p-3 p-md-5">
+    <div
+      class="position-absolute top-0 d-flex flex-column justify-content-center align-items-center w-100 h-100 p-3 p-md-5">
       <h1 class="position-relative border border-3 rounded text-light ff-suls p-4 p-md-5 text-center">
         <b>
           محمدصالح محمدی
@@ -52,9 +79,9 @@
       <h1 class="position-relative border border-3 rounded text-light ff-suls p-4 p-md-5 text-center">
         برنامه نویس وب
       </h1>
-      <h1 class="position-relative border border-3 rounded text-light ff-suls p-4 p-md-5 text-center">
+      <!-- <h1 class="position-relative border border-3 rounded text-light ff-suls p-4 p-md-5 text-center">
         در خدمت شما!
-      </h1>
+      </h1> -->
     </div>
   </header>
 
@@ -64,19 +91,20 @@
 
     <div class="container">
       <div class="row">
-        <div dir="rtl" class="">
+        <div class="">
           <!-- about me -->
           <div id="aboutMe" class="p-1 my-4">
-            <h2 class="text-center ff-suls col-12 col-md-9 p-2 p-md-3 mx-auto border-top border-bottom border-3">
+            <h2 class="text-center ff-suls col-12 p-2 p-md-3 mx-auto border-top border-bottom border-3">
               درباره من
             </h2>
-            <p class="text-center col-12 col-md-6 p-2 mx-auto my-3">
-              {{aboutMe.text}}
-            </p>
             <div class="d-flex flex-wrap justify-content-center align-items-start">
               <!-- my picture -->
-              <div id="myPicture" class="p-2 p-lg-4 col-12">
-                <div class="card col-md-9 col-lg-6 mx-auto">
+              <div id="myPicture"
+                class="p-2 p-lg-4 mb-3 mb-md-auto col-12 d-md-flex flex-md-row-reverse align-items-center">
+                <p class="text-center col-12 col-md-6 p-2 px-md-5 mx-auto mb-3 mb-md-0">
+                  {{aboutMe.text}}
+                </p>
+                <div class="card col-md-9 col-lg-5 mx-auto">
                   <img v-bind:src="myPicture.src" alt="my picture" loading="lazy" class="card-img">
                 </div>
               </div>
@@ -106,13 +134,13 @@
                       <small>
                         (
                         <a v-bind:href="item.linkHref">
-                            {{ item.linkText }}
+                          {{ item.linkText }}
                         </a>
                         )
                       </small>
                     </li>
                   </ul>
-                  
+
                 </div>
               </div>
               <!-- skills -->
@@ -122,13 +150,17 @@
                     مهارت ها
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li v-for="item in skills.list" class="list-group-item d-flex flex-row justify-content-center align-content-between align-items-center">
-                      <div class="text-center w-25 d-flex justify-content-center align-items-center">
+                    <li v-for="item in skills.list"
+                      class="list-group-item d-flex flex-row justify-content-center align-content-between align-items-center">
+                      <div class="text-center w-25 me-1 d-flex justify-content-center align-items-center"
+                        style="font-size: .8em;">
                         <span>{{ item.title }}</span>
                       </div>
-                      <div class="w-75">
+                      <div class="w-75 ms-1">
                         <div class="progress">
-                          <div class="progress-bar bg-pink progress-bar-striped progress-bar-animated" role="progressbar" v-bind:aria-valuenow="item.percent" aria-valuemin="0" aria-valuemax="100" v-bind:style="'width:'+item.percent+'%'">
+                          <div class="progress-bar bg-pink progress-bar-striped progress-bar-animated"
+                            role="progressbar" v-bind:aria-valuenow="item.percent" aria-valuemin="0" aria-valuemax="100"
+                            v-bind:style="'width:'+item.percent+'%'">
                             {{ item.percent }}%
                           </div>
                         </div>
@@ -138,7 +170,7 @@
                 </div>
               </div>
               <!-- courses, Education_Courses -->
-              <div id="educationCourses" class="p-2 p-lg-4 col-12 col-md-6">
+              <!-- <div id="educationCourses" class="p-2 p-lg-4 col-12 col-md-6">
                 <div class="card bg-primary text-light">
                   <div class="card-header ff-suls">
                     دوره های آموزشی
@@ -149,9 +181,9 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <!-- degrees, degrees_certificates_honors -->
-              <div id="degrees_certificates_honors" class="p-2 p-lg-4 col-12 col-md-6">
+              <!-- <div id="degrees_certificates_honors" class="p-2 p-lg-4 col-12 col-md-6">
                 <div class="card bg-primary text-light">
                   <div class="card-header ff-suls">
                     مدارک، گواهینامه ها، افتخارات
@@ -163,7 +195,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <!-- work experiences -->
               <div id="workExperiences" class="p-2 p-lg-4 col-12 col-md-6">
                 <div class="card bg-primary text-light">
@@ -172,11 +204,11 @@
                   </div>
                   <ul class="list-group list-group-flush">
                     <li v-for="item in workExperiences.list" class="list-group-item">
-                      {{ item.title }}: 
+                      {{ item.title }}:
                       از
                       {{ item.startDate }}
                       تا
-                      {{ item.endDate }} 
+                      {{ item.endDate }}
                       <span v-if="item.company !== ''">
                         در
                         {{ item.company }}
@@ -238,11 +270,11 @@
             </div>
           </div>
 
-          <!-- <hr /> -->
+          <!-- <hr > -->
 
           <!-- services -->
           <div id="services" class="p-1 my-4">
-            <h2 class="text-center ff-suls col-12 col-md-9 p-2 p-md-3 mx-auto border-top border-bottom border-3">
+            <h2 class="text-center ff-suls col-12 p-2 p-md-3 mx-auto border-top border-bottom border-3">
               سرویس ها
             </h2>
             <!-- <p class="text-center col-12 col-md-6 p-2 mx-auto my-3"></p> -->
@@ -263,28 +295,33 @@
             </div>
           </div>
 
-          <!-- <hr /> -->
+          <!-- <hr > -->
 
           <!-- contact me -->
-          <div id="contactMe" class="p-1 my-4">
-            <h2 class="text-center ff-suls col-12 col-md-9 p-2 p-md-3 mx-auto border-top border-bottom border-3">
+          <!-- <div id="contactMe" class="p-1 my-4">
+            <h2 class="text-center ff-suls col-12 p-2 p-md-3 mx-auto border-top border-bottom border-3">
               تماس با من
             </h2>
             <div class="d-flex flex-wrap justify-content-center align-items-start">
               <div class="card col-12 col-md-9 col-xl-6">
                 <div id="myLocation" class="card-img-top overflow-hidden" style="height: 20rem;">
-                    <!-- <iframe onloadstart="setTimeout(function(){console.log(this)},5000)" class="w-100 h-100" src="https://maps.google.com/maps?width=0&amp;height=0&amp;hl=fa&amp;title=fa&amp;q=%D8%B4%D9%87%D8%B1%DA%A9%20%D8%B4%D9%87%DB%8C%D8%AF%20%D9%85%D8%B7%D9%87%D8%B1%DB%8C%20%D8%A8%D8%A7%D8%BA%D8%B3%D8%AA%D8%A7%D9%86+(hhhhhhh)&amp;ie=UTF8&amp;t=r&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
+                  <iframe class="w-100 h-100"
+                    src="https://maps.google.com/maps?width=0&amp;height=0&amp;hl=fa&amp;title=fa&amp;q=%D8%B4%D9%87%D8%B1%DA%A9%20%D8%B4%D9%87%DB%8C%D8%AF%20%D9%85%D8%B7%D9%87%D8%B1%DB%8C%20%D8%A8%D8%A7%D8%BA%D8%B3%D8%AA%D8%A7%D9%86+(hhhhhhh)&amp;ie=UTF8&amp;t=r&amp;z=10&amp;iwloc=B&amp;output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
                 <div class="card-body">
                   <form class="form" action="" method="post" accept-charset="utf-8">
-                    <input type="text" name="subject" id="subject" class="form-control my-1" placeholder="عنوان" />
-                    <input type="email" name="email" id="email" required class="form-control text-start my-1" placeholder="ایمیل" />
-                    <textarea name="message" id="message" rows="5" class="form-control my-1" placeholder="متن پیام" required></textarea>
+                    <input type="text" name="subject" id="subject" class="form-control my-1" placeholder="عنوان">
+                    <input type="email" name="email" id="email" required class="form-control text-start my-1"
+                      placeholder="ایمیل">
+                    <textarea name="message" id="message" rows="5" class="form-control my-1" placeholder="متن پیام"
+                      required></textarea>
                     <button type="submit" class="btn btn-success w-100 my-2" disabled>
                       ارسال
                     </button>
                     <div class="d-flex justify-content-around align-items-center px-1 mt-3">
-                      <a href="https://wa.me/989195600184" target="_blank" class="btn bg-light-green text-dark col-6 mx-1">
+                      <a href="https://wa.me/989195600184" target="_blank"
+                        class="btn bg-light-green text-dark col-6 mx-1">
                         پیام در واتساپ
                       </a>
                       <a href="tel:+989195600184" class="btn btn-primary text-light col-6 mx-1">
@@ -295,7 +332,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -304,7 +341,7 @@
   <footer class="bg-dark text-light text-muted mt-3 mt-md-5">
     <div class="container">
       <div class="row">
-        <div dir="rtl" class="p-">
+        <div class="p-">
           <p class="text-center p-2 m-auto">
             تمامی حقوق متعلق به
             <bdo dir="ltr">MSM</bdo>
@@ -315,13 +352,10 @@
     </div>
   </footer>
 
-  <!-- <script src="assets/js/config.js" type="text/javascript" charset="utf-8"></script> -->
-  <!-- <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> -->
+  <!-- vue -->
   <script src="assets/lib/vue/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>
-  <!-- <script src="assets/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
   <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
   <!-- <script src="assets/js/worker.setup.js" type="text/javascript" charset="utf-8"></script> -->
-  <!-- <script src="http://maps.googleapis.com/maps/api/js?v=3"></script> -->
-  <!-- <script type="text/javascript" charset="utf-8"></script> -->
 </body>
+
 </html>
