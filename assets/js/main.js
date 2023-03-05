@@ -241,19 +241,41 @@ window.addEventListener('load', function () {
     servises = new Vue({
       el: '#services',
       data: {
-        list: [{
-          title: 'طراحی واکنش گرا',
-          content: 'طراحی متناسب با تمام دستگاه ها',
-          imageSrc: 'assets/img/responsive-design.jpg'
-        }, {
-          title: 'توسعه وب',
-          content: 'توسعه و ارتقاء صفحات، رابط کاربری و منطق سایت',
-          imageSrc: 'assets/img/develope-website.jpg'
-        }, {
-          title: 'پشتیبانی',
-          content: 'پشتیبانی از سایت',
-          imageSrc: 'assets/img/website-support.jpg'
-        }]
+        list: [
+          {
+            title: 'طراحی واکنش گرا',
+            content: 'طراحی متناسب با تمام دستگاه ها',
+            imageSrc: 'assets/img/responsive-design.jpg'
+          }, {
+            title: 'توسعه وب',
+            content: 'توسعه و ارتقاء صفحات، رابط کاربری و منطق سایت',
+            imageSrc: 'assets/img/develope-website.jpg'
+          }, {
+            title: 'پشتیبانی',
+            content: 'پشتیبانی از سایت و رفع ایراد',
+            imageSrc: 'assets/img/website-support.jpg'
+          }, {
+            title: 'وب سرور',
+            content: 'نصب و پیکربندی وب سرور',
+            imageSrc: 'assets/img/4103157_1026.jpg'
+          }, {
+            title: 'آنالیز',
+            content: 'بررسی تجربه کاربری، رابط گرافیکی و سئوی مقدماتی',
+            imageSrc: 'assets/img/stage-en-create-wordpress-site-without-coding-1024x538.png.webp'
+          }, {
+            title: 'سرور',
+            content: 'نصب و پیکربندی سرور',
+            imageSrc: 'assets/img/coding.webp'
+          }, {
+            title: 'پروژه',
+            content: 'همکاری در پروژه های برنامه نویسی',
+            imageSrc: 'assets/img/12067674_4906450.jpg'
+          }, {
+            title: 'امنیت',
+            content: 'بررسی و آزمایش امنیت پایه سایت',
+            imageSrc: 'assets/img/33533011_8058227.jpg'
+          },
+        ]
       }
     }),
     contactMe = new Vue({
