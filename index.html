@@ -57,6 +57,18 @@
     ::-webkit-scrollbar-thumb {
       background-color: black;
     }
+
+    .underwater-light {
+      height: 40vh !important;
+    }
+
+    .underwater-light>*{
+      height: 100% !important;
+    }
+
+    .underwater-blob {
+      height: 40vh !important;
+    }
   </style>
 </head>
 
@@ -71,9 +83,23 @@
     </button>
   </div>
 
-  <header class="position-relative min-vh-100 mb-3 mb-md-5">
-    <div class="header-bg">
-      <img src="assets/img/header-1.jpg" alt="" class="w-100 min-vh-100 bg-info" loading="lazy">
+  <header class="position-relative min-vh-100 mb-3 mb-md-5" style="background-color: #1e2430;">
+    <div class="header-bg position--relative h--100 d--flex flex-wrap justify-content-start align-items-start overflow-hidden" style="max-height: calc(100vh + 10vh);">
+      <!-- <video src="assets/video/underwater-grayscale-compressed-small.mp4" autoplay loop height="600" class="opacity-50 col--6" style="mix-blend-mode: screen;"></video> -->
+      <!-- <div class="underwater-light col-12 d-flex flex-wrap justify-content-start align-items-start border border-danger d--block position--relative">
+      </div> -->
+      <video autoplay loop class="border- border-danger d-block opacity-100 w-100 h--100 position-absolute top-0 start-0" style="mix-blend-mode: screen;">
+        <source src="assets/video/underwater-grayscale-compressed-small.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop class="border- border-danger d-block w-100 h--100 position-absolute top-0 start-0" style="mix-blend-mode: screen;">
+        <source src="assets/video/particles-compressed.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop class="border- border-danger d-block w-100 h--100 position-absolute top-50 start-0" style="mix-blend-mode: screen;">
+        <source src="assets/video/particles-compressed.mp4" type="video/mp4">
+      </video>
+      <!-- <div class="underwater-blob col-12 d-flex flex-wrap justify-content-start align-items-start border border-danger d--block position--relative">
+      </div> -->
+      <!-- <img src="assets/img/header-1.jpg" alt="" class="w-100 min-vh-100 bg-info" loading="lazy"> -->
       <!-- <script type="text/javascript" charset="utf-8">
         alert(window.innerWidth)
       </script> -->
